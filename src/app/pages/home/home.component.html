@@ -1,0 +1,95 @@
+<header class="w-full bg-[url('assets/img/leaves.jpg')] bg-cover bg-bottom">
+  <div class="w-full min-h-screen md:w-1/2 bg-gradient-to-b from-gray-900/90 to-gray-900/95 p-10 flex">
+    <div class="w-full text-center my-auto">
+      <h1 class="font-bold text-5xl font-comforter-brush text-amber-500 mb-10 md:text-right">CHFB</h1>
+      <h6
+        class="font-montserrat font-bold uppercase text-4xl md:text-5xl lg:text-6xl mb-14 text-white text-center md:text-right"
+      >
+        Em <span class="text-white/70">breve</span>
+      </h6>
+
+      <!-- Count down -->
+      <div class="w-full text-left flex mb-10">
+        <ul class="w-full flex place-content-center md:place-content-end gap-5 mx-auto text-gray-50"
+            *ngIf="remaining$ | async as r">
+          <li>
+            <div
+              class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
+              id="cdD">
+              {{ r.days | number:'2.0-0' }}
+            </div>
+            <p class="text-center text-xs mt-2">Days</p>
+          </li>
+
+          <li>
+            <div
+              class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
+              id="cdH">
+              {{ r.hours  | number:'2.0-0' }}
+            </div>
+            <p class="text-center text-xs mt-2">Hours</p>
+          </li>
+
+          <li>
+            <div
+              class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
+              id="cdM">
+              {{ r.minutes  | number:'2.0-0' }}
+            </div>
+            <p class="text-center text-xs mt-2">Minutes</p>
+          </li>
+
+          <li>
+            <div
+              class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24"
+              id="cdS">
+              {{ r.seconds  | number:'2.0-0' }}
+            </div>
+            <p class="text-center text-xs mt-2">Seconds</p>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <p class="text-base mb-10 text-gray-200 md:text-right">
+        Olá! Meu nome é César e sou desenvolvedor de sistemas apaixonado por criar soluções eficientes e modernas. Este é meu site pessoal, onde compartilho meus projetos, experiências e aprendizados e no momento ele está passando por uma refatoração completa.
+
+        Atualmente, o site está em fase de re-construção, mas em breve você encontrará demonstrações de aplicativos, sistemas, recursos que refletem meu trabalho diário como desenvolvedor.
+
+        Meu objetivo é combinar tecnologia e criatividade, mostrando como códigos bem estruturados podem gerar experiências digitais impactantes. Fique à vontade para explorar, conhecer meus projetos e entrar em contato.
+      </p>
+
+      <!-- Social media -->
+      <div class="w-full text-left flex">
+        <ul class="w-full flex place-content-center md:place-content-end gap-10 mx-auto text-gray-500">
+          <li>
+            <a href="#" class="text-lg hover:text-amber-500">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-lg hover:text-amber-500">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-lg hover:text-amber-500">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="text-lg hover:text-amber-500">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>

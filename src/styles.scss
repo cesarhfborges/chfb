@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add your global SCSS styles here */
+@use "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-comforter-brush {
+  font-family: "Comforter Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
