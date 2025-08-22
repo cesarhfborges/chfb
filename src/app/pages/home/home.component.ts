@@ -1,6 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {interval, map, Subject, takeUntil} from 'rxjs';
-import {intervalToDuration} from 'date-fns';
 
 interface IFormat {
   days: number;
@@ -32,7 +31,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         const minutes = Math.floor((totalSeconds % 3600) / 60);
         const seconds = totalSeconds % 60;
 
-        return { days, hours, minutes, seconds };
+        return {days, hours, minutes, seconds};
       }),
       takeUntil(this.destroy$)
     ).subscribe(remaining => this.remainingSubject.next(remaining));
